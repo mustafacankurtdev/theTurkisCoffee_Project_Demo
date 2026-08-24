@@ -1,0 +1,140 @@
+:root {
+    --colorTitle: rgb(210, 88, 88);
+    --alignCenter: center;
+}
+
+.contact-section-4 {
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-section-4 .containerContact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-section-4 .containerContact .row-description .title-contact h3 {
+    font-size: 38px;
+    font-family: "griffy", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: var(--colorTitle);
+    border-bottom: 2px solid lightblue;
+    text-align: var(--alignCenter);
+
+    margin: 15px;
+}
+
+.contact-section-4 .containerContact .row-description .content-contact p {
+    margin: 25px;
+    padding: 25px;
+    word-spacing: 2px;
+    text-align: start;
+    width: 600px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.contact-section-4 .containerContact form .all-form .input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section-4 .containerContact form .all-form .input-form label {
+    color: #fff;
+}
+
+.contact-section-4 .containerContact form .all-form .input-form input {
+    margin: 13px;
+    width: 13rem;
+    height: 1.4rem;
+    border-radius: 4px;
+    padding: 6px;
+    filter: drop-shadow(2px 2px 2px #7e7c7c);
+}
+
+.contact-section-4 .containerContact form .all-form .input-form .name-input .label-1 {
+    position: absolute;
+    top: -5px;
+    left: 15px;
+}
+
+.contact-section-4 .containerContact form .all-form .input-form .name-input .label-2 {
+    position: absolute;
+    top: -5px;
+    right: 9rem;
+}
+
+.contact-section-4 .containerContact .all-form .input-form {
+
+    padding: 5rem;
+    height: 65vh;
+
+    border-radius: 20%;
+    z-index: 999;
+}
+
+#email-Id {
+    width: 28rem;
+}
+
+#label-3 {
+    position: absolute;
+    top: 163px;
+    left: 6rem;
+}
+
+#label-4 {
+    position: absolute;
+    left: 6rem;
+    bottom: 17rem;
+}
+
+#contact-send-btn {
+    padding: 8px 10px;
+    border-radius: 18px 0px 18px 18px;
+    background-color: rgb(94, 21, 21);
+    color: #fff;
+    margin: 25px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    transition: transform 0.2s ease-out,filter 0.2s ease-out;
+}
+
+#contact-send-btn:hover{
+    transform: scale(1.1);
+    filter: contrast(2);
+}
+
+.contact-section-4 .containerContact form .all-form .input-form textarea {
+    width: 28rem;
+    height: 12vh;
+    border-radius: 5px;
+}
+
+.contact-section-4 .containerContact form .all-form .input-form .img-form img {
+    transform: rotate(13deg);
+    position: absolute;
+    top: 7rem;
+    right: 6rem;
+    width: 30rem;
+}
+
+.contact-section-4 .containerContact form .all-form .input-form .img-form {
+    z-index: 0;
+}

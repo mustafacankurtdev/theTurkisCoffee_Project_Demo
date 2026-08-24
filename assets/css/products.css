@@ -1,0 +1,117 @@
+:root {
+    --colorText: hsl(0, 0%, 100%);
+    --fontText: 14px;
+}
+
+.header-section-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    /* border-bottom: 3px solid rgb(93, 37, 37); */
+    border-radius: 0px 0px 10px 10px;
+}
+
+.header-section-1 .containerHead .list-row nav ul {
+    display: flex;
+}
+
+.header-section-1 .containerHead .list-row {
+    /* background-color: rgba(0, 0, 0, 0.712); */
+    border-radius: 5px 5px 15px 15px;
+}
+
+.header-section-1 .containerHead .list-row nav ul li {
+    margin: 2rem;
+    list-style-type: none;
+}
+
+.header-section-1 .containerHead .list-row nav ul li a {
+    text-decoration: none;
+    color: var(--colorText);
+
+    font-size: 22px;
+    font-family: "Yuyu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    animation: all 0.5s ease-in-out;
+}
+
+.header-section-1 .containerHead .list-row nav ul li a.active {
+    color: rgb(210, 88, 88);
+}
+
+.header-section-1 .containerHead .list-row nav ul li a:hover {
+    color: rgb(210, 88, 88);
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #f3e7d3;
+}
+
+
+.card {
+    width: 15rem;
+    height: 30rem;
+    margin: 45px;
+    gap: 35px;
+    background-color: burlywood;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 55px;
+    filter: drop-shadow(3px 3px 3px #fff);
+
+
+    position: relative;
+
+    transition: transform 1s ease-out
+    ,box-shadow 1s ease-out;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.img-card img {
+    width: 11rem;
+    transform: rotate(-18deg);
+    filter: drop-shadow(2px 2px 2px rgb(220, 80, 80));
+}
+
+
+.title-card h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    position: absolute;
+    top: 20rem;
+    right: 15%;
+    left: 0;
+    text-align: end;
+}
+
+.price-card p{
+    padding: 7px;
+    border-radius: 100px;
+    background-color: #fff;
+    border-bottom: 2px solid brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+
+    position: absolute;
+    bottom: -20px;
+    left: 5.5rem;
+}

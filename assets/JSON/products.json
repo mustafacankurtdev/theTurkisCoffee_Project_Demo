@@ -1,0 +1,23 @@
+{
+    "title": [
+        "Özel Türk Kahvesi",
+        "Geleneksel Kahve",
+        "Dibek Kahvesi",
+        "Menengiç Kahvesi",
+        "Türk Kahvesi"
+    ],
+    "price": [
+        185.00,
+        165.00,
+        210.00,
+        195.00,
+        215.00
+    ],
+    "image": [
+        "assets/photoAll/Coffe-removebg-preview.png",
+        "assets/photoAll/coffePhoto1-removebg-preview.png",
+        "assets/photoAll/Coffe-removebg-preview.png",
+        "assets/photoAll/coffePhoto1-removebg-preview.png",
+        "assets/photoAll/coffePhoto1-removebg-preview.png"
+    ]
+}
