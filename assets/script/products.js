@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let timerCount = 0;
 
-    const searchBox = document.getElementById("search-Id");
+    const searchBox = document.getElementById("searchBar-Id");
 
 
     function showAlert(mssg) {
@@ -35,12 +35,13 @@ window.addEventListener("DOMContentLoaded", () => {
             .then(res => res.json())
             .then(products => {
 
-                const { title, price, image } = products;
+                const { title, price, image, desc } = products;
 
                 title.forEach((item, index) => {
                     cards.innerHTML +=
                         `
                     <div class="card">
+                    <div class="img-background"></div>
                   <div class="img-card">
                          <img src="${image[index]}" alt="cardPhoto">
                      </div>
@@ -49,8 +50,18 @@ window.addEventListener("DOMContentLoaded", () => {
                          <h1>${item}</h1>
                      </div>
 
+                     <div class="desc-card">
+                        <p>
+                           ${item, desc[index]}
+                        </p>
+                        </div>
+
+                        <div class="btn-card">
+                          <button id="sket_Id"><i class="fa-solid fa-basket-shopping"></i>Add The Sket</button>
+                          <button id="heart-Id"><i class="fa-solid fa-heart"></i></button>
+                          </div>
                      <div class="price-card">
-                         <p>${item, price[index]} TL</p>
+                         <span>${item, price[index]} TL</span>
                      </div>
                      </div>`;
 
@@ -65,6 +76,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
                             cards.innerHTML = "";
 
+                            // if(title != item){
+                            //     // cards.innerHTML += 
+                            //     // `
+                            //     // <div>
+                            //     // <h1>Ürün Mevcut Değil</h1>
+                            //     // </div>
+                            //     // `;
+
+                            //     return window.alert("Ürün Mevcut Değil!");
+                            // }
+                            // else{
+
+                            // }
+
                             if (cards.innerHTML != "") {
                                 showAlert();
                             }
@@ -74,6 +99,7 @@ window.addEventListener("DOMContentLoaded", () => {
                                     cards.innerHTML +=
                                         `
                         <div class="card">
+                        <div class="img-background"></div>
                           <div class="img-card">
                         <img src="${image[index]}" alt="cardPhoto">
                           </div>
@@ -82,8 +108,19 @@ window.addEventListener("DOMContentLoaded", () => {
                          <h1>${itm}</h1>
                         </div>
 
+                           <div class="desc-card">
+                        <p>
+                           ${itm, desc[index]}
+                        </p>
+                        </div>
+
+                        <div class="btn-card">
+                          <button id="sket_Id"><i class="fa-solid fa-basket-shopping"></i>Add The Sket</button>
+                          <button id="heart-Id"><i class="fa-solid fa-heart"></i></button>
+                          </div>
+
                         <div class="price-card">
-                         <p>${item, price[index]} TL</p>
+                         <span>${item, price[index]} TL</span>
                         </div>
                         </div>`;
 
@@ -91,10 +128,18 @@ window.addEventListener("DOMContentLoaded", () => {
                             }
                         });
                     }
+
                     filterSearch();
+
+
                 });
             });
+
+
+
     }
+
+
 
 
 
